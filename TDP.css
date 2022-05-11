@@ -1,0 +1,107 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1,5;
+    background-color: white;
+}
+#main-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    min-width: 280px;
+    max-width: 300px;
+}
+
+#navbar{
+   height: 100%; 
+   border-right: solid 2px gray;
+   margin-right: 10px;
+}
+#navbar h1 {
+    font-size:1.6rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem 0 ;
+}
+#navbar ul {
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 80%;
+    list-style: none;
+}
+#navbar ul li {
+    border: solid 1px gray;
+    margin: 0 10px 10px 10px;
+    border-radius: 25px;
+}
+#navbar ul li:hover {
+    color: yellow;
+    background-color: black;
+}
+   
+#main-header #navbar ul li a {
+    font-size: 1.2rem;
+    display: block;
+    text-align:center;
+    padding: .8rem 1rem .8rem .8rem;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+#main-header #navbar ul li a:hover{
+    color: white;
+}
+
+
+/*main section*/
+#main-doc{
+    position: absolute;
+    margin-left: 320px;
+    padding: 2rem 1rem;
+}
+#main-doc .main-section header{
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    color: black;
+}
+#main-doc .main-section .main-article p{
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+#main-doc .main-section .main-article ul li a {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+#main-doc .main-section .main-article code{
+    display: block;
+    padding: 1.5rem;
+    text-align: left;
+    background-color: wheat;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+}
+/*mobile-devices*/
+@media (max-width: 600px) {
+    #main-header {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        margin: 0;
+        max-width: 95%;
+        max-height: 400px;
+    }
+
+    #navbar {
+        width: 100%;
+        margin: 0;
+    }
+
+    #main-doc{
+        position: relative;
+        margin-left:0px;
+        padding: 2rem 1rem;
+        margin-top: 410px;
+    }
+}
+
